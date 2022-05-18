@@ -1,39 +1,76 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Formulario = () => {
+const Formulario = ({ guardarBusquedaLetra }) => {
+  const [busqueda, guardarBusqueda] = useState({
+    artista: '',
+    cancion: ''
+  });
+  const [error, guardarError] = useState(false);
+
+  const { artista, cancion } = busqueda;
+
+  //función a cada input para leer su contenido
+  const actualizarState = e => {
+    guardarBusqueda({
+      ...busqueda,
+      [e.target.name]: e.target.value
+    })
+  }
+
+  //consultar las apis
+  const buscarInformacion = e => {
+    e.preventDefault();
+
+    if (artista.trim() === '' || cancion.trim() === '') {
+      guardarError(true);
+      return;
+    }
+    guardarError(false);
+    //Todo bien, pasar al componente principal
+
+    guardarBusquedaLetra(busqueda);
+  }
   return (
-    <div class="bg-info">
-      <div class="container">
-        <div class="row">
-          <form action="" class="col card text-white bg-transparent mb-5 pt-5 pb-2">
-            <fieldset>
-              <legend class="text-center">Buscador Letras Canciones</legend>
+    <div className="bg-info">
+      {error ? <p className="alert alert-danger text-center p-2">Todos los campos son obligatorios</p> : null}
+      <div className="container">
+        <div className="row">
+          <form
+            onSubmit={buscarInformacion}
+            className="col card text-white bg-transparent mb-5 pt-5 pb-2">
 
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
+            <fieldset>
+              <legend className="text-center">Buscador Letras Canciones</legend>
+
+              <div className="row">
+                <div className="col-md-6">
+                  <div className="form-group">
                     <label for="">ARTISTA</label>
                     <input
                       type="text"
-                      class="form-control"
+                      className="form-control"
                       name="artista"
-                      placeholder="Nombre Artista" />
+                      placeholder="Nombre Artista"
+                      onChange={actualizarState}
+                      value={artista} />
                   </div>
                 </div>
 
-                <div class="col-md-6">
-                  <div class="form-group">
+                <div className="col-md-6">
+                  <div className="form-group">
                     <label for="">CANCIÓN</label>
                     <input
                       type="text"
-                      class="form-control"
+                      className="form-control"
                       name="cancion"
-                      placeholder="Nombre Canción" />
+                      placeholder="Nombre Canción"
+                      onChange={actualizarState}
+                      value={cancion} />
                   </div>
                 </div>
               </div>
 
-              <button class="btn btn-primary float-right">BUSCAR</button>
+              <button className="btn btn-primary float-right">BUSCAR</button>
 
             </fieldset>
           </form>
