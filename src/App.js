@@ -16,7 +16,7 @@ function App() {
       const url = `https://api.lyrics.ovh/v1/${artista}/${cancion}`;
 
       const resultado = await axios(url);
-      guardarLetra(resultado.data.lyrics);
+      console.log(resultado.data.lyrics);
 
     }
     consultarApiLetra();
