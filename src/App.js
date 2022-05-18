@@ -6,7 +6,7 @@ function App() {
 
   //definir el state
   const [busquedaletra, guardarBusquedaLetra] = useState({});
-  const [letra, guardarLetra] = useState('');
+  // const [letra, guardarLetra] = useState('');
 
   useEffect(() => {
     if (Object.keys(busquedaletra).length === 0) return;
