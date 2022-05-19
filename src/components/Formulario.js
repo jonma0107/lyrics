@@ -73,7 +73,7 @@ const Formulario = ({ guardarBusquedaLetra }) => {
               <button className="btn btn-primary float-right">BUSCAR</button>
 
             </fieldset>
-            <h2 className="title">Lista de Reproducción Sugerida</h2>
+            <h3 className="title">Lista de Reproducción Sugerida</h3>
             <div className="contenedor-video">
               <iframe src="https://www.youtube.com/embed/videoseries?list=PLut3UNd_0vy3KjHHmwpiQvxO8LGbP_Mj2&jct=CZgDL_OFRLeQ3EINRX9jtRE48j-r-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
