@@ -8,7 +8,7 @@ const Info = ({ info }) => {
   return (
     <div class="card border-light">
       <div class="card-header bg-primary text-light font-weight-bold">
-        información Artista
+        Información Artista
       </div>
       <div class="card-body">
         <img src={strArtistThumb} alt="logo artista" />
