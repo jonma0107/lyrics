@@ -80,6 +80,7 @@ h2 {
 }
 .contenedor-video {
   display: flex;
+  justify-content: center;
 }
 .contenedor-video iframe {
   flex-shrink: 1;
