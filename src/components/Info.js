@@ -16,14 +16,14 @@ const Info = ({ info }) => {
         <h2 class="card-text">Biografía:</h2>
         <p class="card-text">{strBiographyES}</p>
         <p class="card-text">
+          <a href={`https://${info.strWebsite}`} target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-website"></i>
+          </a>
           <a href={`https://${info.strFacebook}`} target="_blank" rel="noopener noreferrer">
             <i className="fab fa-facebook"></i>
           </a>
-          <a href={`https://${info.strTwitter}`} target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a href={`${info.strLastFMChart}`} target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-lastfm"></i>
+          <a href="https://github.com/jonma0107" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-github"></i>
           </a>
         </p>
       </div>
