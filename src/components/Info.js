@@ -16,12 +16,12 @@ const Info = ({ info }) => {
         <h2 class="card-text">Biografía:</h2>
         <p class="card-text">{strBiographyES}</p>
         <p class="card-text">
-          <a href={`https://${info.strWebsite}`} target="_blank" rel="noopener noreferrer">
+          {/* <a href={`https://${info.strWebsite}`} target="_blank" rel="noopener noreferrer">
             <i className="fab fa-info-circle"></i>
           </a>
           <a href={`https://${info.strFacebook}`} target="_blank" rel="noopener noreferrer">
             <i className="fab fa-twitter"></i>
-          </a>
+          </a> */}
           <a href="https://github.com/jonma0107" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-github-alt"></i>
           </a>
