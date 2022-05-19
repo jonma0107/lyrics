@@ -79,11 +79,10 @@ h2 {
   text-align: center;
 }
 .contenedor-video {
-  display: grid;
-  place-items: center;
-  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+  display: flex;
 }
 .contenedor-video iframe {
+  flex-shrink: 1;
   border: 3px solid #fff;
   width: 666px;
   height: 333px;
