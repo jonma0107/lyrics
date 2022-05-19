@@ -73,10 +73,10 @@ const Formulario = ({ guardarBusquedaLetra }) => {
               <button className="btn btn-primary float-right">BUSCAR</button>
 
             </fieldset>
-            <center>
-              <h2>Lista de Reproducción Sugerida</h2>
-              <iframe width="666" height="333" src="https://www.youtube.com/embed/videoseries?list=PLut3UNd_0vy3KjHHmwpiQvxO8LGbP_Mj2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </center>
+            <h2 className="title">Lista de Reproducción Sugerida</h2>
+            <div className="contenedor-video">
+              <iframe src="https://www.youtube.com/embed/videoseries?list=PLut3UNd_0vy3KjHHmwpiQvxO8LGbP_Mj2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
           </form>
         </div>
       </div>
