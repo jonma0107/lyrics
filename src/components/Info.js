@@ -17,7 +17,7 @@ const Info = ({ info }) => {
         <p class="card-text">{strBiographyES}</p>
         <p class="card-text">
           <a href={`https://${info.strWebsite}`} target="_blank" rel="noopener noreferrer">
-            <i className="fa fa-external-link-square"></i>
+            <i className="fab fa-info-circle"></i>
           </a>
           <a href={`https://${info.strFacebook}`} target="_blank" rel="noopener noreferrer">
             <i className="fab fa-twitter"></i>
