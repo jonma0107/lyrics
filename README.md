@@ -7,6 +7,6 @@
 ## La información de la banda o artista y la letra de la canción solicitada. Que podemos leer mientras disfrutamos de la música en reproducción. :notes:
 
 ![image](https://user-images.githubusercontent.com/53632260/176991636-0bd93e2b-4fca-44f7-9e78-2397795e6d58.png)
-![image](https://user-images.githubusercontent.com/53632260/176991809-0672cd5c-7bb3-465d-8c93-bf9a4706069f.png)
+![image](https://user-images.githubusercontent.com/53632260/176991868-8b2d23f2-44c9-46f6-8bc0-6750001dfd83.png)
 
 
