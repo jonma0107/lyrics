@@ -1,5 +1,4 @@
-# Buscador de Letras de Canciones :musical_note: 
-# con la respectiva Biografía del Artista! :microphone: 
+# Buscador de Letras de Canciones :musical_note: con la respectiva Biografía del Artista! :microphone: 
 ## Una simple aplicación hecha con la librería REACT de JavaScript, que mediante el consumo de una API Web Service se hace la petición de buscar la biografía del nombre de un grupo o artista musical y la letra de alguna de sus canciones. Se propuso para este proyecto una lista de reproducción de canciones que no tienen subtitulos en YouTube. :sunglasses:  
 
 ![image](https://user-images.githubusercontent.com/53632260/176991313-c6f5873f-c882-4b65-9155-ba6c56bd00e0.png)
